@@ -206,6 +206,9 @@ section {
 }
 .stat h4 { color: var(--accent1); font-size: 1.4rem; }
 
+.stat:hover { transform: translateY(-8px); box-shadow: var(--shadow); }
+.stat i { font-size: 1.8rem; color: var(--accent1); margin-bottom: 10px; }
+
 /* ===== Cards ===== */
 .services-container, .why-container {
   display: grid;
@@ -315,3 +318,4 @@ footer {
   }
   .nav-links.open { right: 0; }
 }
+
