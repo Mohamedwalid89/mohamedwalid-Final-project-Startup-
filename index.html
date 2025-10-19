@@ -5,11 +5,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MyStartup — Futuristic Digital Agency</title>
 
-  <!-- Boxicons -->
+  <!-- CSS Files -->
   <link rel="stylesheet" href="bootstrap-grid.min.css">
-
-  <!-- CSS -->
   <link rel="stylesheet" href="finalproject - Copy.css" />
+
+  <style>
+    /* ===== STAR METEOR LOGO ===== */
+    .star-meteor {
+      position: relative;
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+      flex-shrink: 0;
+      animation: starFloat 3s ease-in-out infinite alternate;
+    }
+
+    /* النجمة نفسها */
+    .star-meteor::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      width: 20px;
+      height: 20px;
+      background: radial-gradient(circle at center, #00e0ff 0%, #0077ff 70%, transparent 90%);
+      clip-path: polygon(
+        50% 0%, 61% 35%, 98% 35%, 68% 57%,
+        79% 91%, 50% 70%, 21% 91%, 32% 57%,
+        2% 35%, 39% 35%
+      );
+      filter: drop-shadow(0 0 12px rgba(0,224,255,0.9));
+    }
+
+    /* ذيل الشهاب */
+    .star-meteor::after {
+      content: "";
+      position: absolute;
+      top: 16px;
+      left: -20px;
+      width: 40px;
+      height: 4px;
+      background: linear-gradient(90deg,
+        transparent 0%,
+        rgba(0,224,255,0.8) 50%,
+        rgba(255,255,255,0.3) 100%
+      );
+      border-radius: 2px;
+      transform: skewX(-20deg);
+      filter: blur(1px);
+      animation: tailPulse 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes starFloat {
+      0% { transform: translateY(0px) rotate(-3deg); }
+      100% { transform: translateY(-4px) rotate(3deg); }
+    }
+
+    @keyframes tailPulse {
+      0% { opacity: 0.6; transform: skewX(-20deg) scaleX(1); }
+      100% { opacity: 1; transform: skewX(-10deg) scaleX(1.3); }
+    }
+
+    /* ===== LOGO TEXT ===== */
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: var(--accent1);
+    }
+
+    .logo span.text {
+      color: var(--text);
+      letter-spacing: 0.5px;
+      transition: color var(--transition);
+    }
+
+    .logo:hover span.text {
+      color: var(--accent1);
+    }
+  </style>
 </head>
 <body>
 
@@ -18,19 +94,23 @@
     <div class="spinner"></div>
   </div>
 
-  <!-- ===== HERO / HEADER ===== -->
+  <!-- ===== HEADER / HERO ===== -->
   <header id="home" class="hero">
     <nav class="navbar">
       <div class="container">
+
+        <!-- ✅ Star-Meteor Logo -->
         <div class="logo">
-          <i class="bx bx-rocket"></i>
-          <span>MyStartup</span>
+          <div class="star-meteor"></div>
+          <span class="text">MyStartup</span>
         </div>
 
+        <!-- MENU BUTTON (Mobile) -->
         <button id="menuToggle" class="menu-toggle" aria-expanded="false">
           <i class="bx bx-menu"></i>
         </button>
 
+        <!-- NAVIGATION -->
         <ul id="navList" class="nav-links">
           <li><a class="nav-btn active" href="#home">Home</a></li>
           <li><a class="nav-btn" href="#about">About</a></li>
@@ -41,6 +121,7 @@
       </div>
     </nav>
 
+    <!-- HERO CONTENT -->
     <div class="hero-content">
       <h1>We Build <span>Next-Gen</span> Web Experiences</h1>
       <p>Futuristic design. Powerful performance. Crafted with precision.</p>
@@ -61,18 +142,9 @@
         <a href="#contact" class="btn-outline">Contact Us</a>
       </div>
       <div class="about-stats">
-        <div class="stat">
-          <h4>120+</h4>
-          <p>Projects Completed</p>
-        </div>
-        <div class="stat">
-          <h4>35</h4>
-          <p>Creative Experts</p>
-        </div>
-        <div class="stat">
-          <h4>5+</h4>
-          <p>Years of Experience</p>
-        </div>
+        <div class="stat"><h4>120+</h4><p>Projects Completed</p></div>
+        <div class="stat"><h4>35</h4><p>Creative Experts</p></div>
+        <div class="stat"><h4>5+</h4><p>Years of Experience</p></div>
       </div>
     </div>
   </section>
@@ -160,4 +232,3 @@
   <script src="final project.js"></script>
 </body>
 </html>
-
