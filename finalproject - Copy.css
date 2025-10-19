@@ -319,3 +319,30 @@ footer {
   .nav-links.open { right: 0; }
 }
 
+/* ===== Star Beam Logo ===== */
+.star-beam {
+  width: 28px;
+  height: 28px;
+  background: radial-gradient(circle at 50% 50%, #00e0ff 0%, #0077ff 50%, transparent 70%);
+  clip-path: polygon(
+    50% 0%, 58% 35%, 95% 35%, 65% 57%, 78% 90%, 
+    50% 70%, 22% 90%, 35% 57%, 5% 35%, 42% 35%
+  );
+  filter: drop-shadow(0 0 8px #00e0ff);
+  animation: starPulse 2.8s ease-in-out infinite alternate;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+@keyframes starPulse {
+  0% {
+    transform: rotate(0deg) scale(0.95);
+    filter: drop-shadow(0 0 6px #00e0ff);
+    opacity: 0.8;
+  }
+  100% {
+    transform: rotate(10deg) scale(1.1);
+    filter: drop-shadow(0 0 20px #00e0ff);
+    opacity: 1;
+  }
+}
