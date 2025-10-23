@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MyStartup — Futuristic Digital Agency</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="finalproject - Copy.css" />
+
+  <!-- Boxicons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+  <!-- ===== LOADER ===== -->
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
+
+  
+  <!-- ===== HEADER ===== -->
+  <header id="home" class="hero">
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <div class="meteor-logo">
+  <div class="meteor"></div>
+  <div class="particles">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <span class="text">MyStartup</span>
+</div>
+
+        </div>
+
+        <button id="menuToggle" class="menu-toggle" aria-expanded="false">
+          <i class="bx bx-menu"></i>
+        </button>
+
+        <ul id="navList" class="nav-links">
+          <li><a class="nav-btn active" href="#home">Home</a></li>
+          <li><a class="nav-btn" href="#about">About</a></li>
+          <li><a class="nav-btn" href="#services">Services</a></li>
+          <li><a class="nav-btn" href="#why">Why Choose Us</a></li>
+          <li><a class="nav-btn" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <h1>We Build <span>Next-Gen</span> Web Experiences</h1>
+      <p>Futuristic design. Powerful performance. Crafted with precision.</p>
+      <div class="hero-buttons">
+        <a href="#services" class="btn-main">Get Started</a>
+        <a href="#why" class="btn-outline">Learn More</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="about-section" aria-labelledby="aboutTitle">
+    <div class="container about-inner">
+      <div class="carousel-wrap" role="region" aria-label="About carousel">
+        <div class="carousel-viewport">
+          <div id="carouselTrack" class="carousel-track" aria-live="polite">
+
+            <!-- Slide 1 -->
+            <article class="slide" data-variant="v1" role="group" aria-roledescription="slide" aria-label="Innovation">
+              <div class="card">
+                <h2 class="about-main">About Us</h2>
+                <div class="card-left">
+                  <h3 class="card-title">Innovation</h3>
+                  <p class="card-desc">We continuously innovate to deliver cutting-edge designs and products.</p>
+
+                  <div class="arrow-controls">
+                    <button data-action="prev" class="arrow-btn arrow-left" aria-label="Previous slide" type="button">
+                      <i class="bx bx-chevron-left"></i>
+                    </button>
+                    <button data-action="next" class="arrow-btn arrow-right" aria-label="Next slide" type="button">
+                      <i class="bx bx-chevron-right"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="card-right">
+                  <div class="viz-3d" aria-hidden="true"></div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Slide 2 -->
+            <article class="slide" data-variant="v2" role="group" aria-roledescription="slide" aria-label="Customer Focus">
+              <div class="card">
+                <h2 class="about-main">About Us</h2>
+                <div class="card-left">
+                  <h3 class="card-title">Customer Focus</h3>
+                  <p class="card-desc">We put users at the core of everything to create meaningful experiences.</p>
+
+                  <div class="arrow-controls">
+                    <button data-action="prev" class="arrow-btn arrow-left" aria-label="Previous slide" type="button">
+                      <i class="bx bx-chevron-left"></i>
+                    </button>
+                    <button data-action="next" class="arrow-btn arrow-right" aria-label="Next slide" type="button">
+                      <i class="bx bx-chevron-right"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="card-right">
+                  <div class="viz-3d" aria-hidden="true"></div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Slide 3 -->
+            <article class="slide" data-variant="v3" role="group" aria-roledescription="slide" aria-label="Smart Solutions">
+              <div class="card">
+                <h2 class="about-main">About Us</h2>
+                <div class="card-left">
+                  <h3 class="card-title">Smart Solutions</h3>
+                  <p class="card-desc">We solve problems with smart technology to save time and cost for clients.</p>
+
+                  <div class="arrow-controls">
+                    <button data-action="prev" class="arrow-btn arrow-left" aria-label="Previous slide" type="button">
+                      <i class="bx bx-chevron-left"></i>
+                    </button>
+                    <button data-action="next" class="arrow-btn arrow-right" aria-label="Next slide" type="button">
+                      <i class="bx bx-chevron-right"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="card-right">
+                  <div class="viz-3d" aria-hidden="true"></div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Slide 4 -->
+            <article class="slide" data-variant="v4" role="group" aria-roledescription="slide" aria-label="Development">
+              <div class="card">
+                <h2 class="about-main">About Us</h2>
+                <div class="card-left">
+                  <h3 class="card-title">Development</h3>
+                  <p class="card-desc">We build robust, maintainable web and mobile applications designed to scale.</p>
+
+                  <div class="arrow-controls">
+                    <button data-action="prev" class="arrow-btn arrow-left" aria-label="Previous slide" type="button">
+                      <i class="bx bx-chevron-left"></i>
+                    </button>
+                    <button data-action="next" class="arrow-btn arrow-right" aria-label="Next slide" type="button">
+                      <i class="bx bx-chevron-right"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="card-right">
+                  <div class="viz-3d" aria-hidden="true"></div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Slide 5 -->
+            <article class="slide" data-variant="v5" role="group" aria-roledescription="slide" aria-label="Security">
+              <div class="card">
+                <h2 class="about-main">About Us</h2>
+                <div class="card-left">
+                  <h3 class="card-title">Security</h3>
+                  <p class="card-desc">We apply best security practices and testing to keep your data safe.</p>
+
+                  <div class="arrow-controls">
+                    <button data-action="prev" class="arrow-btn arrow-left" aria-label="Previous slide" type="button">
+                      <i class="bx bx-chevron-left"></i>
+                    </button>
+                    <button data-action="next" class="arrow-btn arrow-right" aria-label="Next slide" type="button">
+                      <i class="bx bx-chevron-right"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="card-right">
+                  <div class="viz-3d" aria-hidden="true"></div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Slide 6 -->
+            <article class="slide" data-variant="v6" role="group" aria-roledescription="slide" aria-label="Global Vision">
+              <div class="card">
+                <h2 class="about-main">About Us</h2>
+                <div class="card-left">
+                  <h3 class="card-title">Global Vision</h3>
+                  <p class="card-desc">We operate to international standards and serve clients across markets.</p>
+
+                  <div class="arrow-controls">
+                    <button data-action="prev" class="arrow-btn arrow-left" aria-label="Previous slide" type="button">
+                      <i class="bx bx-chevron-left"></i>
+                    </button>
+                    <button data-action="next" class="arrow-btn arrow-right" aria-label="Next slide" type="button">
+                      <i class="bx bx-chevron-right"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="card-right">
+                  <div class="viz-3d" aria-hidden="true"></div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Slide 7 -->
+            <article class="slide" data-variant="v7" role="group" aria-roledescription="slide" aria-label="24/7 Support">
+              <div class="card">
+                <h2 class="about-main">About Us</h2>
+                <div class="card-left">
+                  <h3 class="card-title"> Support</h3>
+                  <p class="card-desc">Ongoing support and consulting after delivery to keep services running.</p>
+
+                  <div class="arrow-controls">
+                    <button data-action="prev" class="arrow-btn arrow-left" aria-label="Previous slide" type="button">
+                      <i class="bx bx-chevron-left"></i>
+                    </button>
+                    <button data-action="next" class="arrow-btn arrow-right" aria-label="Next slide" type="button">
+                      <i class="bx bx-chevron-right"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="card-right">
+                  <div class="viz-3d" aria-hidden="true"></div>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <div id="carouselDots" class="carousel-dots" role="tablist" aria-label="Slides"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services" class="reveal">
+    <h2>Our Services</h2>
+    <div class="services-container">
+      <!-- الخدمة 1 -->
+      <div class="service-card">
+        <div class="card-inner">
+          <i class="fas fa-code"></i>
+          <h3>Web Development</h3>
+          <p>Building modern and optimized websites with futuristic interfaces.</p>
+        </div>
+      </div>
+      <!-- الخدمة 2 -->
+      <div class="service-card">
+        <div class="card-inner">
+          <i class="fas fa-paint-brush"></i>
+          <h3>UI / UX Design</h3>
+          <p>Crafting user-friendly and aesthetic experiences for your brand.</p>
+        </div>
+      </div>
+      <!-- الخدمة 3 -->
+      <div class="service-card">
+        <div class="card-inner">
+          <i class="fas fa-bolt"></i>
+          <h3>Performance Optimization</h3>
+          <p>Boosting loading speeds and improving user satisfaction.</p>
+        </div>
+      </div>
+      <!-- الخدمة 4 -->
+      <div class="service-card">
+        <div class="card-inner">
+          <i class="fas fa-mobile-alt"></i>
+          <h3>App Development</h3>
+          <p>Creating seamless mobile experiences for Android and iOS platforms.</p>
+        </div>
+      </div>
+      <!-- الخدمة 5 -->
+      <div class="service-card">
+        <div class="card-inner">
+          <i class="fas fa-lock"></i>
+          <h3>Cyber Security</h3>
+          <p>Securing digital assets with advanced and modern protection systems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE US ===== -->
+  <section id="why" class="reveal">
+    <h2><i class="bx bx-server"></i> Why Choose Us</h2>
+    <div class="why-scroll">
+
+      <div class="server-card">
+        <div class="image-box">
+          <img src="images/innovation.jpg" alt="Innovation">
+          <div class="text-overlay">
+            <h3>Innovation</h3>
+            <p>We create new solutions and ideas that transform your digital identity into something unique and modern.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="server-card">
+        <div class="image-box">
+          <img src="images/team.jpg" alt="Expert Team">
+          <div class="text-overlay">
+            <h3>Expert Team</h3>
+            <p>Our professional team combines expertise and creativity to deliver excellence in every project.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="server-card">
+        <div class="image-box">
+          <img src="images/delivery.jpg" alt="Fast Delivery">
+          <div class="text-overlay">
+            <h3>Fast Delivery</h3>
+            <p>We value your time — our projects are delivered fast without compromising on quality or performance.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="server-card">
+        <div class="image-box">
+          <img src="images/security.jpg" alt="Security">
+          <div class="text-overlay">
+            <h3>Security</h3>
+            <p>We guarantee maximum protection for your digital assets and information at all stages of development.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="server-card">
+        <div class="image-box">
+          <img src="images/support.jpg" alt="24/7 Support">
+          <div class="text-overlay">
+            <h3> Support</h3>
+            <p>Our support team is always available to help you — anytime, anywhere.</p>
+          </div>
+        </div>
+      </div>
+      <div class="server-card">
+        <div class="image-box">
+          <img src="images/cloud.jpg" alt="Cloud Integration">
+          <div class="text-overlay">
+            <h3>Cloud Integration</h3>
+            <p>Modern cloud-based systems that make your business more flexible and scalable.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="server-card">
+        <div class="image-box">
+          <img src="images/ai.jpg" alt="AI Automation">
+          <div class="text-overlay">
+            <h3>AI Automation</h3>
+            <p>Implementing smart automation using the latest in Artificial Intelligence.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="server-card">
+        <div class="image-box">
+          <img src="images/performance.jpg" alt="Performance">
+          <div class="text-overlay">
+            <h3>Performance</h3>
+            <p>High performance is our standard — fast, efficient, and seamless user experiences guaranteed.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="reveal">
+    <h2>Contact Us</h2>
+    <div class="contact-box">
+      <button id="contactBtn" class="btn-main">Send Message</button>
+      <form id="contactForm" class="hidden" novalidate>
+        <input id="name" type="text" placeholder="Your Name" required />
+        <input id="email" type="email" placeholder="Your Email" required />
+        <input id="phone" type="tel" placeholder="Phone Number" />
+        <textarea id="message" placeholder="Your Message" rows="4"></textarea>
+        <button type="submit" class="btn-main">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-container">
+      <p>© <span id="year"></span> MyStartup. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="#"><i class="bx bxl-facebook"></i></a>
+        <a href="#"><i class="bx bxl-twitter"></i></a>
+        <a href="#"><i class="bx bxl-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- POPUP -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <h3>Message Sent!</h3>
+      <p>Thank you for reaching out — we'll get back to you soon.</p>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="final project.js"></script>
+</body>
+</html>
